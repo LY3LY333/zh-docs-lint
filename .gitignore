@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# logs / coverage
+*.log
+coverage/
+.nyc_output/
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

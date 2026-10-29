@@ -1,0 +1,46 @@
+{
+  "name": "zh-docs-lint",
+  "version": "0.1.0",
+  "description": "Lint Chinese technical writing: CJK/Latin spacing, full-width punctuation, duplicated punctuation. Auto-fix and a ready-made GitHub Action.",
+  "type": "module",
+  "bin": {
+    "zh-docs-lint": "bin/zh-docs-lint.js",
+    "zdl": "bin/zh-docs-lint.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./rules": "./src/rules.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "chinese",
+    "cjk",
+    "lint",
+    "linter",
+    "markdown",
+    "typography",
+    "documentation",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LY3LY333/zh-docs-lint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LY3LY333/zh-docs-lint/issues"
+  },
+  "homepage": "https://github.com/LY3LY333/zh-docs-lint#readme"
+}

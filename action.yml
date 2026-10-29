@@ -1,0 +1,27 @@
+name: zh-docs-lint
+description: 检查中文技术文档排版（中英文空格、全角标点、重复标点），有问题就让 CI 失败
+author: LY3LY333
+
+branding:
+  icon: type
+  color: green
+
+inputs:
+  paths:
+    description: 要检查的路径，多个用空格分隔
+    required: false
+    default: .
+  fix:
+    description: 设为 true 时直接改写文件，而不是报错
+    required: false
+    default: 'false'
+
+runs:
+  using: composite
+  steps:
+    - name: Run zh-docs-lint
+      shell: bash
+      run: |
+        node "${{ github.action_path }}/bin/zh-docs-lint.js" \
+          ${{ inputs.paths }} \
+          ${{ inputs.fix == 'true' && '--fix' || '' }}
