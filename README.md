@@ -26,16 +26,14 @@
 ## 安装
 
 ```bash
-# 直接用
-npx zh-docs-lint .
-
-# 或克隆
 git clone https://github.com/LY3LY333/zh-docs-lint.git
 cd zh-docs-lint
 node bin/zh-docs-lint.js .
 ```
 
 要求 Node.js ≥ 18.17，**没有任何第三方依赖**。
+
+> 尚未发布到 npm，所以暂时不能用 `npx zh-docs-lint`。下文命令里的 `zdl` 都指 `node bin/zh-docs-lint.js`（`npm link` 后可直接用命令名）。
 
 ## 用法
 

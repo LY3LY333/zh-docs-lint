@@ -1,7 +1,7 @@
 {
   "name": "zh-docs-lint",
   "version": "0.1.0",
-  "description": "Lint Chinese technical writing: CJK/Latin spacing, full-width punctuation, duplicated punctuation. Auto-fix and a ready-made GitHub Action.",
+  "description": "Chinese typography linter: CJK/Latin spacing, full-width punctuation, duplicated marks — auto-fix and GitHub Action.",
   "type": "module",
   "bin": {
     "zh-docs-lint": "bin/zh-docs-lint.js",
@@ -27,12 +27,16 @@
   "keywords": [
     "chinese",
     "cjk",
+    "chinese-typography",
+    "typography",
+    "punctuation",
+    "spacing",
     "lint",
     "linter",
     "markdown",
-    "typography",
     "documentation",
-    "zero-dependency"
+    "github-action",
+    "cli"
   ],
   "license": "MIT",
   "repository": {
